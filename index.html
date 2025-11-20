@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Нечітка оцінка ризику фінансування стартап проектів</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Нечітка оцінка ризику фінансування стартап проектів</h1>
+				<p class="subtitle">Тема 7: Математична модель оцінювання ризиків</p>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="section">
+				<h2>Модель оцінювання ризику</h2>
+				<p>
+					Математична модель задачі оцінювання комерційного проекту представлена
+					наступним чином:
+				</p>
+				<div class="formula">R = F(P₁, P₂, P₃) → Y</div>
+				<p style="margin-top: 15px">де:</p>
+				<ul style="margin-left: 20px; color: #cbd5e1">
+					<li><strong>P₁</strong> – оцінка проекту (класичний або стартап)</li>
+					<li><strong>P₂</strong> – оцінка галузі економіки</li>
+					<li><strong>P₃</strong> – агрегована оцінка ризику реалізації</li>
+					<li>
+						<strong>Y</strong> – вихідна оцінка та лінгвістичне трактування
+						ризику
+					</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h2>Лінгвістичні змінні</h2>
+				<p>Кожен критерій ризику оцінюється за допомогою термів:</p>
+				<div class="linguistic-vars">
+					<div class="var-badge">Н – Низький рівень</div>
+					<div class="var-badge">НС – Нижче середнього</div>
+					<div class="var-badge">С – Середній рівень</div>
+					<div class="var-badge">ВС – Вище середнього</div>
+					<div class="var-badge">В – Високий рівень</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<h2>Групи критеріїв ризику</h2>
+				<div class="risk-groups">
+					<div class="risk-card">
+						<h4>K₁ – Операційні ризики</h4>
+						<ul>
+							<li>Втрата клієнтської бази</li>
+							<li>Втрата постачальника</li>
+							<li>Втрата ринкової долі</li>
+							<li>Зниження рівня управління</li>
+							<li>Виробничий конфлікт</li>
+							<li>Зниження якості процесів</li>
+							<li>Зниження продуктивності</li>
+							<li>Незабезпеченість ресурсами</li>
+							<li>Ризики персоналу</li>
+						</ul>
+					</div>
+
+					<div class="risk-card">
+						<h4>K₂ – Інвестиційні ризики</h4>
+						<ul>
+							<li>Неефективність інвестицій</li>
+							<li>Недосягнення цілей ROI</li>
+							<li>Зрив термінів створення фондів</li>
+							<li>Перевищення стартових інвестицій</li>
+							<li>Брак інвестиційного капіталу</li>
+						</ul>
+					</div>
+
+					<div class="risk-card">
+						<h4>K₃ – Фінансові ризики</h4>
+						<ul>
+							<li>Неефективне використання капіталу</li>
+							<li>Збитковість</li>
+							<li>Втрата інвестора</li>
+							<li>Втрата платоспроможності</li>
+							<li>Неоптимальна ціна капіталу</li>
+						</ul>
+					</div>
+
+					<div class="risk-card">
+						<h4>K₄ – Ризики інноваційної діяльності</h4>
+						<ul>
+							<li>Неефективні інноваційні інвестиції</li>
+							<li>Неефективне просування інновацій</li>
+							<li>Зрив термінів розробки</li>
+							<li>Порушення технологій інновацій</li>
+							<li>Ресурсна недостатність</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<h2>Рівні оцінки безпеки фінансування</h2>
+				<div class="assessment-levels">
+					<div class="level-card">
+						<div class="level-name">Незначний</div>
+						<div class="level-range">[0; 0.21]</div>
+					</div>
+					<div class="level-card">
+						<div class="level-name">Низький</div>
+						<div class="level-range">(0.21; 0.36]</div>
+					</div>
+					<div class="level-card">
+						<div class="level-name">Середній</div>
+						<div class="level-range">(0.36; 0.67]</div>
+					</div>
+					<div class="level-card">
+						<div class="level-name">Високий</div>
+						<div class="level-range">(0.67; 0.87]</div>
+					</div>
+					<div class="level-card">
+						<div class="level-name">Граничний</div>
+						<div class="level-range">(0.87; 1]</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<h2>Калькулятор оцінки ризику</h2>
+				<div class="calculator">
+					<h3>Введіть оцінки для кожної групи критеріїв</h3>
+
+					<div class="input-group">
+						<label>K₁ - Операційні ризики:</label>
+						<select id="k1">
+							<option value="0.1">Н - Низький рівень</option>
+							<option value="0.3">НС - Нижче середнього</option>
+							<option value="0.5">С - Середній рівень</option>
+							<option value="0.7">ВС - Вище середнього</option>
+							<option value="0.9">В - Високий рівень</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<label>Достовірність K₁ (0-1):</label>
+						<input
+							type="number"
+							id="d1"
+							min="0"
+							max="1"
+							step="0.1"
+							value="0.75"
+						/>
+					</div>
+
+					<div class="input-group">
+						<label>K₂ - Інвестиційні ризики:</label>
+						<select id="k2">
+							<option value="0.1">Н - Низький рівень</option>
+							<option value="0.3">НС - Нижче середнього</option>
+							<option value="0.5">С - Середній рівень</option>
+							<option value="0.7">ВС - Вище середнього</option>
+							<option value="0.9">В - Високий рівень</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<label>Достовірність K₂ (0-1):</label>
+						<input
+							type="number"
+							id="d2"
+							min="0"
+							max="1"
+							step="0.1"
+							value="0.8"
+						/>
+					</div>
+
+					<div class="input-group">
+						<label>K₃ - Фінансові ризики:</label>
+						<select id="k3">
+							<option value="0.1">Н - Низький рівень</option>
+							<option value="0.3">НС - Нижче середнього</option>
+							<option value="0.5">С - Середній рівень</option>
+							<option value="0.7">ВС - Вище середнього</option>
+							<option value="0.9">В - Високий рівень</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<label>Достовірність K₃ (0-1):</label>
+						<input
+							type="number"
+							id="d3"
+							min="0"
+							max="1"
+							step="0.1"
+							value="0.37"
+						/>
+					</div>
+
+					<div class="input-group">
+						<label>K₄ - Ризики інноваційної діяльності:</label>
+						<select id="k4">
+							<option value="0.1">Н - Низький рівень</option>
+							<option value="0.3">НС - Нижче середнього</option>
+							<option value="0.5">С - Середній рівень</option>
+							<option value="0.7">ВС - Вище середнього</option>
+							<option value="0.9">В - Високий рівень</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<label>Достовірність K₄ (0-1):</label>
+						<input
+							type="number"
+							id="d4"
+							min="0"
+							max="1"
+							step="0.1"
+							value="0.47"
+						/>
+					</div>
+
+					<button onclick="calculateRisk()">Розрахувати ризик</button>
+
+					<div class="result" id="result">
+						<h3>Результат оцінки:</h3>
+						<div class="result-value" id="resultValue"></div>
+						<div class="result-description" id="resultDescription"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
