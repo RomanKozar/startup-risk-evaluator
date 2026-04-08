@@ -2,6 +2,9 @@
 
 Веб-додаток для оцінювання ризиків комерційних та стартап проектів на основі нечіткої математичної моделі.
 
+[![Live Demo](https://img.shields.io/badge/demo-online-red.svg?style=for-the-badge)](https://romankozar.github.io/startup-risk-evaluator/)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg?style=for-the-badge)](https://github.com/RomanKozar/startup-risk-evaluator/releases)
+
 ![Головна сторінка](preview.png)
 
 ## 📋 Опис проекту
